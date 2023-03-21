@@ -10,7 +10,7 @@ btnStart.addEventListener('click', () => {
 
 function calkNum(num) {
   let resultOne = [];
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < num + 1; i++) {
     if (i % 2 !== 0) {
       resultOne.push(i)
     }
@@ -22,7 +22,6 @@ function calkNum(num) {
 let resultOne = calkNum(num);
 
 function calkList(num) {
-  num.splice(0, 2, '1 - 3');
   return num.join(',');
 }
 
